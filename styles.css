@@ -1,0 +1,164 @@
+body {
+  margin: 50px;
+  background-color: rgba(12, 12, 12, 0.993);
+}
+
+/* Contenedor de imagen titulo y parrafo*/
+.container {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 80px;
+}
+
+.Makoto {
+  flex: 0 0 40%;
+  margin-right: 2%;
+}
+
+.contenido {
+  flex: 1;
+}
+
+.Titulo {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 50px;
+  color:aquamarine
+}
+
+.Parrafo {
+  margin-top: 5px;
+  text-align: justify;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  color:#fff
+  
+  
+}
+/* finalizacion de imagen titulo y parrafo */
+
+/* Peliculas*/
+.Imagenes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.photo {
+  position: relative;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.photo img {
+  width: 300px;
+  height: auto;
+}
+
+.photo:hover {
+  transform: scale(1.1);
+}
+
+.sinopsis {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /*background-color: rgba(155, 217, 250, 0.979);*/
+  color: #080808;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  text-align: justify;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+
+  background-image: url('Imagenes/fondo.jpg');
+  background-size: 300px 200px; /* Modifica el tamaño de la imagen de fondo */
+  background-repeat: no-repeat; /* Evita que se repita la imagen en caso de que sea más pequeña que el contenedor */
+  padding: 20px; /* Ajusta el espacio interno para que el texto no quede pegado a los bordes */
+}
+
+.photo:hover .sinopsis {
+  opacity: 1;
+}
+
+/* caja de comentarios*/
+
+footer {
+  background-image: url('Imagenes/fondo.jpg');
+  color: black;
+  padding: 5px;
+  text-align: center;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 80px;
+  font-size: 10px; /* Ajusta el tamaño de fuente para hacer el footer más pequeño */
+}
+
+.contenedor-comentarios {
+  margin-top: 5px;
+  padding-top: 5px;
+  border-top: 1px solid #fff;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.contenedor-comentarios h2 {
+  color: black;
+  font-size: 20px; /* Ajusta el tamaño de fuente para hacer el texto dentro del contenedor más pequeño */
+}
+
+#contenedor-comentarios {
+  width: 90%;
+  padding: 1px;
+  margin-bottom: 10px;
+}
+
+#Boton-comentarios {
+  padding: 10px 40px;
+  background-color: #0c0c0e;
+  color: #d88810;
+  border: none;
+  cursor: pointer;
+  font-size: 14px; /* Ajusta el tamaño de fuente para hacer el botón más pequeño */
+}
+
+
+
+/* fin de caja de comentarios*/
+
+
+/* CSS for buttons */
+.social-buttons {
+  position: fixed;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+
+.social-button {
+  display: block;
+  margin-bottom: 20px;
+  color: #110de0;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgb(206, 124, 253);
+  padding: 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.social-button:hover {
+  background-color: rgba(13, 204, 178, 0.952);
+}
